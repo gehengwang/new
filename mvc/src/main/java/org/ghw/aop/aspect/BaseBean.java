@@ -20,6 +20,7 @@ public class BaseBean {
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
 		BaseBean bb = (BaseBean) ac.getBean(org.ghw.aop.aspect.BaseBean.class);
+		System.out.println(bb.getClass());
 		//bb.doSomething();
 		bb.doSomethingReturn();
 	}
